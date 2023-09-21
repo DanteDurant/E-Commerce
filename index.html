@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <link rel="stylesheet" href="./public/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header" data-header>
+
+    <div class="container">
+      <div class="overlay" data-overlay>
+      </div>
+
+      <div class="theme-container">
+        <button id="themeToggle" class="theme-btn">
+          <p>Dark Theme</p>
+        </button>
+        <ion-icon name="stop"></ion-icon>
+      </div>
+
+      <a href="#" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_15_35)">
+
+            <path
+              d="M5.33331 6H19.8672C20.4687 6 20.9341 6.52718 20.8595 7.12403L20.1095 13.124C20.0469 13.6245 19.6215 14 19.1172 14H16.5555H9.44442H7.99998"
+              stroke-linejoin="round" />
+            <path
+              d="M2 4H4.23362C4.68578 4 5.08169 4.30341 5.19924 4.74003L8.30076 16.26C8.41831 16.6966 8.81422 17 9.26638 17H19"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="10" cy="20" r="1" stroke-linejoin="round" />
+            <circle cx="17.5" cy="20" r="1" stroke-linejoin="round" />
+          </g>
+          <defs>
+            <clipPath id="clip0_15_35">
+              <rect width="24" height="24" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+      <div class="header-actions">
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          <p class="header-action-label">Sign in</p>
+        </button>
+        <button class="header-action-btn">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+          <p class="header-action-label">Cart</p>
+          <div class="btn-badge green" aria-hidden="true">3</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_15_35)">
+
+                <path
+                  d="M5.33331 6H19.8672C20.4687 6 20.9341 6.52718 20.8595 7.12403L20.1095 13.124C20.0469 13.6245 19.6215 14 19.1172 14H16.5555H9.44442H7.99998"
+                  stroke-linejoin="round" />
+                <path
+                  d="M2 4H4.23362C4.68578 4 5.08169 4.30341 5.19924 4.74003L8.30076 16.26C8.41831 16.6966 8.81422 17 9.26638 17H19"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="10" cy="20" r="1" stroke-linejoin="round" />
+                <circle cx="17.5" cy="20" r="1" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_15_35">
+                  <rect width="24" height="24" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="navbar-list_container">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#" class="h4 navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="h4 navbar-link">Shop</a>
+            </li>
+
+            <li>
+              <a href="#" class="h4 navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="h4 navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="h4 navbar-link">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="section product">
+    <div class="container">
+
+      <ul class="product-list">
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge red"> -25%</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge green"> New</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge red"> -25%</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge red"> -25%</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge red"> -25%</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-card">
+            <figure class="card-banner">
+              <a href="#" class="card-image-container">
+                <img class="image" src="https://i.ibb.co/D1Gp0fy/product-1.jpg" alt="Varsi Leather Bag" loading="lazy"
+                  class="w-100">
+                <div class="card-text">
+                  <ul>
+                    <li>Waterproof Rating of IPX7</li>
+                    <li>Made from 100% Recycled Materials</li>
+                    <li>2 Year Guarantee </li>
+                  </ul>
+                </div>
+              </a>
+              <div class="card-badge red"> -25%</div>
+              <div class="card-actions">
+                <button class="card-action-btn cart-btn">
+                  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  <p>Add to Cart</p>
+                </button>
+                <button class="card-action-btn" aria-label="Quick view">4.2
+                  <ion-icon name="star"></ion-icon>
+                </button>
+              </div>
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Varsi Leather Bag</a>
+              </h3>
+              <div class="card-price">
+                <data value="48.75">&pound;48.75</data>
+                <data value="65.00">&pound;65.00</data>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- 
+        - #USER
+      -->
+
+  <section class="section user">
+    <div class="container">
+
+      <ul class="user-list">
+
+        <li class="user-item">
+          <figure class="user-banner">
+            <div class="user-card">
+              <div class="user-content">
+                <div class="user-head">
+                  <p>Alex Hartman</p>
+                </div>
+                <div class="user-bio">
+                  <img src="https://i.ibb.co/806hr6Z/57.jpg" alt="57" border="0">
+                  <p>
+                    E-commerce enthusiast, passionate about unique finds, bringing you handpicked treasures from
+                    around
+                    the globe. With over 5 years of experience in online selling, I pride myself in curating
+                    high-quality products that resonate with my customers.
+                  </p>
+                </div>
+                <div class="user-review">
+                  <div class="user-review_rating">
+                    <span>
+                      <p class="h3">Rating</p>
+                      <div>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p>5/5</p>
+                      </div>
+                    </span>
+                  </div>
+
+
+                  <div class="user-review_followers">
+                    <span id="followers">
+                      <p class="h3">Followers</p>
+                      <div>
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <p>256</p>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal" id="followersModal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h3>Follower List</h3>
+                  <ul id="followerList">
+                    <!-- Follower names are dynamically added here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+        <li class="user-item">
+          <figure class="user-banner">
+            <div class="user-card">
+              <div class="user-review_content">
+                <div class="user-review_details">
+                  <img src="https://i.ibb.co/sy2LZMB/17.jpg" alt="17" border="0">
+                  <div>
+                    <p class="h2">Ruby Knight</p>
+                    <p class="h4">User Review</p>
+                  </div>
+                </div>
+                <div class="user-review_text">
+                  <p>
+                    Absolutely love this product! It exceeded my expectations in terms of quality and functionality. The
+                    design is sleek and it's super easy to use. It's now a must-have in my daily routine and could not
+                    go without it. Highly
+                    recommend to anyone considering a purchase!
+                  </p>
+                </div>
+                <button class="h4 read-more">Read More</button>
+
+                <div class="user-review_footer">
+                  <div>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p>5/5</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+      </ul>
+
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
